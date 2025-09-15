@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Saira');  /*Loads the "Saira" font from Google Fonts*/
+
+
+body {                                   /* Styles for the entire page body */
+  font-family: 'Saira', sans-serif;      /* Sets the text font to Saira, falling back to sans-serif */
+  margin: 0;                             /* Removes default body margin */
+  background-color: lightgreen;          /* Gives the page a light green background */
+  color: black;                          /* Sets default text color to black */
+  font-size: 22px;                       /* Base font size: 22px */
+  line-height: 1.6;                      /* Line height (space between lines) is 1.6 times the font size */
+}
+
+
+.navbar {                                /* Styles for the navigation bar container */
+  background-color: lightblue;           /* Gives navbar a light blue background */
+  padding: 15px;                         /* Adds padding inside navbar (all sides) */
+  text-align: center;                    /* Centers text and inline content inside the navbar */
+}
+
+.navbar h2 {                             /* Styles <h2> headings inside the navbar */
+  margin: 0;                             /* Removes default margin on h2 */
+  padding-bottom: 10px;                  /* Adds 10px space below the heading */
+  font-size: 28px;                       /* Makes the heading text 28px */
+  color: darkblue;                       /* Heading text color is dark blue */
+}
+
+.nav-buttons a {                         /* Styles links inside the .nav-buttons container */
+  margin: 0 10px;                        /* Horizontal spacing between links (10px left & right) */
+  padding: 8px 15px;                     /* Inside spacing of links: 8px top/bottom, 15px left/right */
+  text-decoration: none;                 /* Removes underline from links */
+  color: black;                        /* Text color inside links is black */
+  border-radius: 5px;                    /* Rounds the corners of the links */
+  font-weight: 600;                      /* Makes the text semi-bold */
+}
+
+.nav-buttons a:hover {                   /* Styles links when hovered */
+  background-color: lightpink;           /* Changes button background to light pink on hover */
+}
+
+.container {                             /* Main content wrapper */
+  display: flex;                         /* Turns it into a flexbox container */
+  flex-wrap: wrap;                       /* Allows items to wrap onto new lines if needed */
+  padding: 20px;                         /* Inner spacing of the container */
+  margin: 20px;                          /* Space around the container */
+  background-color: lightpink;           /* Gives the container a light pink background */
+  border-radius: 15px;                   /* Rounds its corners */
+}
+
+.text, .image {                          /* Shared styles for text and image blocks */
+  flex: 1;                               /* Allows both to grow equally to share space */
+  min-width: 300px;                      /* Ensures each block is at least 300px wide */
+  margin: 10px;                          /* Adds 10px outer spacing around each block */
+}
+
+.image img {                             /* Targets images inside .image */
+  width: 100%;                           /* Makes the image fill the width of its container */
+  border-radius: 15px;                   /* Rounds the image corners */
+  border: 3px solid lightblue;           /* Adds a 3px light blue border around the image */
+}
+
+/* ---------- Table ---------- */
+table {                                  /* Styles for all tables */
+  width: 100%;                           /* Makes table span full width of its container */
+  border-collapse: collapse;             /* Removes gaps between table borders */
+  margin-top: 15px;                      /* Adds 15px space above tables */
+  background-color: lightorange;         /* (Invalid named color) Intended as table background */
+}
+
+th, td {                                 /* Shared styles for table headers and cells */
+  border: 2px solid black;               /* Adds solid black borders */
+  padding: 10px;                         /* Adds 10px inner spacing */
+  text-align: left;                      /* Aligns text to the left */
+  background-color: lightcyan;           /* Gives table cells a light cyan background */
+}
+
+
+.timeline {                              /* Styles for the timeline list container */
+  list-style-type: none;                 /* Removes default bullets from the list */
+  padding: 0;                            /* Removes default list padding */
+  margin-top: 15px;                      /* Adds space above the timeline */
+}
+
+.timeline li {                           /* Styles each list item in the timeline */
+  margin: 8px 0;                         /* Adds vertical space between items */
+  padding: 10px;                         /* Inside spacing for the item box */
+  background-color: lightblue;           /* Gives items a light blue background */
+  border-left: 5px solid lightorange;    /* Left border as an accent bar (note: “lightorange” not valid) */
+  border-radius: 5px;                    /* Rounds the corners of the item box */
+}
